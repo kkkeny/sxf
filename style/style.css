@@ -1,0 +1,142 @@
+body, body * {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    font-size: 14px;
+    color: #888;
+    background-color: #efefef;
+}
+a {
+    color: #888;
+    text-decoration: none;
+}
+div {
+    border-color: #d3d3d3 !important;
+}
+img {
+    width: 100%;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+.hidden {
+    visibility: hidden;
+}
+span.hidden {
+    display: inline;
+    visibility: hidden;
+}
+/*进度条*/
+.progress {
+    width: 100%;
+    min-width: 137px;
+    line-height: 1em;
+}
+.progress .max {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 80%;
+    height: 16px;
+    float: left;
+}
+.progress .max div {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.progress span {
+    font-size: 14px;
+    /*margin-left: 2%;*/
+}
+.progress .back {
+    background-color: #e1e7c5;
+}
+.progress .max .front {
+    background-color: #abcd04;
+    width: 0;
+}
+/*end*/
+.login, .nav, .bread {
+
+    /*width: 1600px;*/
+
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+}
+.warp {
+    width: 950px;
+    margin: 0 auto;
+}
+.login .warp {
+    height: 38px;
+    line-height: 38px;
+    text-align: right;
+}
+.nav {
+    position: relative;
+    height: 89px;
+    background-color: #fff;
+    z-index: 99;
+}
+.nav h1 {
+    display: inline-block;
+    width: 130px;
+    height: 100%;
+    line-height: 89px;
+    background: url(res/logo.jpg) no-repeat center center;
+    text-indent: -10000px;
+    margin-right: 140px;
+    float: left;
+}
+.nav .warp .link {
+    height: 400px;
+    font-size: 1.14em;
+    overflow: hidden;
+    text-align: center;
+}
+.nav .channel, .nav .menu {
+    display: inline-block;
+    *dispaly: inline;
+    *zoom: 1;
+    float: right;
+    line-height: 85px;
+    border-top: 5px solid #fff !important;
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+}
+.nav .channel.current, .nav .channel:hover {
+    border-color: #0085be !important;
+    color: #0085be;
+}
+.nav .menu {
+    width: 135px;
+    height: 90px;
+    margin: 0;
+}
+.nav .menu a {
+    display: block;
+    width: 90%;
+    line-height: 2.2em;
+    margin: 0 auto;
+    border-bottom: 1px dashed;
+}
+.nav .menu a.last {
+    border: none;
+}
+.nav .menu a:hover {
+    color: #0085be;
+}
+.nav .menu div {
+    /*width: 135px;*/
+    background-color: #fff;
+    border: 1px solid;
+}
+.see-more {
+    font-size: 14px;
+}

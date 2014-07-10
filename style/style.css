@@ -7,6 +7,9 @@ body, html {
     color: #888;
     background-color: #efefef;
 }
+ul, li {
+    list-style: none;
+}
 a {
     color: #888;
     text-decoration: none;
@@ -80,7 +83,7 @@ span.hidden {
 }
 .nav {
     position: relative;
-    height: 89px;
+    height: 90px;
     background-color: #fff;
     z-index: 99;
 }
@@ -95,9 +98,8 @@ span.hidden {
     float: left;
 }
 .nav .warp .link {
-    height: 400px;
+    /*height: 400px;*/
     font-size: 1.14em;
-    overflow: hidden;
     text-align: center;
 }
 .nav .channel, .nav .menu {
@@ -109,15 +111,21 @@ span.hidden {
     border-top: 5px solid #fff !important;
     padding: 0 0.5em;
     margin: 0 0.5em;
+    font-weight: bold;
 }
-.nav .channel.current, .nav .channel:hover {
+.nav .channel.current {
     border-color: #0085be !important;
     color: #0085be;
 }
+.nav .channel:hover {
+    color: #0085be;
+}
 .nav .menu {
+    position: relative;
     width: 135px;
     height: 90px;
     margin: 0;
+    border-top: none!important;
 }
 .nav .menu a {
     display: block;
@@ -125,18 +133,99 @@ span.hidden {
     line-height: 2.2em;
     margin: 0 auto;
     border-bottom: 1px dashed;
+    font-weight: normal;
+}
+.nav .menu a.channel,.nav .menu a.list {
+    line-height: 85px;
+    border-bottom: none;
+    font-weight: bold;
 }
 .nav .menu a.last {
     border: none;
 }
 .nav .menu a:hover {
     color: #0085be;
+    font-weight: bold;
 }
 .nav .menu div {
-    /*width: 135px;*/
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    z-index: 999;
+    width: 135px;
     background-color: #fff;
     border: 1px solid;
 }
 .see-more {
     font-size: 14px;
+}
+/*内页*/
+.content {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+/*绿色按钮*/
+.green-btn {
+    display: inline-block;
+    width: 162px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: url(res/green-btn.png) no-repeat;
+    text-align: center;
+}
+/*面包屑*/
+.bread {
+    height: 38px;
+    line-height: 38px;
+    background: #efefef;
+}
+.bread a, .bread a:hover {
+    color: #333;
+}
+/*模块*/
+.box {
+    width: 948px;
+    margin: 0 auto 20px;
+    border: 1px solid #d3d3d3;
+    border-top: 2px solid #1097d0 !important;
+    background: #fff;
+}
+.box .menu {
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    border-bottom: 1px solid #d3d3d3;
+    background: #f9f9f9;
+}
+.box .menu h2 {
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #0083be;
+    font-family: Microsoft YaHei, "微软雅黑";
+}
+.box .menu a {
+    float: right;
+    margin-top: 20px;
+}
+.box .menu a.green-btn {
+    margin-top: 8px;
+}
+.box .menu span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #d3d3d3;
+    color: #888;
+}
+/*底部*/
+.footer {
+    border-top: 1px solid #d3d3d3;
+    height: 120px;
+    background: #efefef;
 }

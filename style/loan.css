@@ -1,0 +1,215 @@
+
+.hidden {
+    display: none;
+}
+.steps {
+    height: 45px;
+    margin-bottom: 95px;
+    border-bottom: 2px solid #e3e3e3;
+}
+.steps .warp {
+    position: relative;
+}
+.steps ul {
+    position: absolute;
+    top: 25px;
+    left: 115px;
+    width: 720px;
+    margin: 0 auto;
+}
+.steps ul li {
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+.steps ul li span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+    background: url(res/step.png) no-repeat;
+}
+.steps ul li p {
+    height: 43px;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+}
+.steps ul li.step-on span {
+    background: url(res/step-on.png) no-repeat;
+}
+.steps ul li.step-on p {
+    color: #0083be;
+}
+/*申请条件*/
+.conditions ul {
+    overflow: hidden;
+    width: 840px;
+    margin: 50px auto 40px;
+}
+.conditions ul li {
+    float: left;
+    width: 210px;
+    text-align: center;
+}
+.conditions ul li span {
+    display: inline-block;
+    width: 115px;
+    height: 115px;
+    background-image: url(res/icon7.png);
+    background-repeat: no-repeat;
+}
+.conditions ul li span.cond01 {
+    background-position: 0px 0px;
+}
+.conditions ul li span.cond02 {
+    background-position: -132px 0px;
+}
+.conditions ul li span.cond03 {
+    background-position: -262px 0px;
+}
+.conditions ul li span.cond04 {
+    background-position: -397px 0px;
+}
+.conditions ul li p {
+    height: 43px;
+    line-height: 43px;
+    font-size: 14px;
+    color: #888;
+}
+/*申请材料*/
+.data ul {
+    overflow: hidden;
+    width: 864px;
+    margin: 50px auto 40px;
+}
+.data li {
+    float: left;
+    width: 116px;
+    margin: 0 50px;
+    text-align: center;
+}
+.data li img {
+    width: 110px;
+    height: 142px;
+    padding: 2px;
+    border: 1px solid #d3d3d3;
+}
+.data li p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+/*贷款方式及费用*/
+.fees {
+    margin-bottom: 0;
+}
+.fees .menu a {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 25px;
+    color: #0083be;
+    background: url(res/cal.png) no-repeat left center;
+}
+.fees .info {
+    padding: 50px;
+    font-size: 14px;
+    background: url(res/fees-bg.jpg) no-repeat right bottom;
+}
+.fees .info dl {
+    overflow: hidden;
+    width: 260px;
+    margin: 0 auto;
+    line-height: 32px;
+}
+.fees .info dt {
+    float: left;
+    width: 90px;
+    border-bottom: 1px solid #d3d3d3;
+    color: #888;
+}
+.fees .info dd {
+    float: left;
+    width: 170px;
+    border-bottom: 1px solid #d3d3d3;
+    color: #333;
+}
+.fees .info .green-btn {
+    display: block;
+    margin: 50px auto 0;
+}
+/*在线申请*/
+.loan-form {
+    width: 436px;
+    margin: 50px auto;
+}
+.loan-form dt {
+    float: left;
+    width: 90px;
+    height: 42px;
+    margin-bottom: 20px;
+    line-height: 42px;
+}
+.loan-form dd {
+    position: relative;
+    float: left;
+    width: 346px;
+    height: 42px;
+    margin-bottom: 20px;
+    line-height: 42px;
+}
+.loan-form dd .input-txt {
+    width: 325px;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    border: none;
+    background: url(res/input-bg.gif) no-repeat;
+}
+.loan-form dd span.error {
+    position: absolute;
+    left: 450px;
+    width: 200px;
+    top: 0px;
+    font-size: 14px;
+    color: #f51414;
+}
+.loan-form dd span.Validform_right {
+    display: none;
+}
+.loan-form dd label {
+    margin-right: 35px;
+}
+.loan-form dd label input {
+    margin-right: 10px;
+}
+#res {
+    display: none;
+}
+.loan-form select {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d3d3d3;
+}
+.btns a, .btns a:hover {
+    font-size: 14px;
+    color: #333;
+}
+.btns {
+    width: 200px;
+    padding-left: 90px;
+    line-height: 32px;
+    text-align: center;
+}
+.btns button {
+    width: 200px;
+    margin-bottom: 10px;
+    border: none;
+    background: url(res/big-green-btn.png) no-repeat;
+    cursor: pointer;
+}

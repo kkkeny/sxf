@@ -1,4 +1,5 @@
 (function() {
+    //倒计时
     if (!$_obj)
         return;
     var eTime = new Date($_obj.endTime), now, left, str;
@@ -11,9 +12,10 @@
             return;
         }
         left = parseInt(left / 1000);
+        var h = parseInt(left / 3600), m = parseInt((left % 3600) / 60);
         str = '';
-        str += parseInt(left / 3600) + '小时';
-        str += parseInt(left / 60) + '分';
+        str += h + '小时';
+        str += m + '分';
         str += (left % 60) + '秒';
         $('#time-left').text(str);
         var _arguments = arguments;
@@ -21,5 +23,13 @@
             _arguments.callee.call();
         }, 1000);
     })();
-    //console.log(left.getFullYear() + '<>' + left.getMonth() + left.getDate());
+    //金额
+    $('.count span').bind('click', function() {
+        var current = parseInt($('.count input').val()), step = 10000;
+        if ($(this)[0].className.indexOf('plus') != -1)
+            step = -step;
+        current += step;
+        current = current < 0 ? 0 : current;
+        $('.count input').val(current + '元');
+    });
 })();

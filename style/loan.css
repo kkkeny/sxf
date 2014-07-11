@@ -358,6 +358,11 @@
 .new-shop-r .count span.plus-btn {
     bottom: 0px;
 }
+.new-shop-r .count input{
+    border:none;
+    display: inline;
+    width:75%;
+}
 .new-shop-r .green-btn {
     margin-left: 100px;
 }

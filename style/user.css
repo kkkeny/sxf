@@ -1,0 +1,205 @@
+.hidden {
+    display: none;
+}
+.content .left {
+    float: left;
+    width: 168px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+}
+.left li {
+    margin-bottom: 5px;
+}
+.left li a {
+    display: block;
+    padding-left: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.left li a:hover ,.left li a.current {
+    font-weight: bold;
+    background: #1097d0;
+    color: #fff;
+}
+.content .right {
+    position: relative;
+    float: left;
+    width: 698px;
+    margin: 50px 0 0 20px;
+    padding: 25px 20px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+}
+.right .tabbar {
+    position: absolute;
+    top: -51px;
+    left: -1px;
+    height: 50px;
+}
+.right .tabbar li {
+    float: left;
+    width: 132px;
+    margin-right: 8px;
+    border: 1px solid #d3d3d3;
+    border-bottom: none;
+}
+.right .tabbar li a {
+    display: block;
+    width: 132px;
+    line-height: 46px;
+    border-top: 3px solid #f9f9f9;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 14px;
+    background: #f9f9f9;
+    text-align: center;
+}
+.right .tabbar li a:hover ,.right .tabbar li a.current {
+    border-top: 3px solid #1097d0;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    color: #333;
+}
+.right .tabbar li a.current {
+    font-weight: bold;
+}
+.right .select {
+    margin-bottom: 30px;
+}
+.right th, .right td {
+    height: 20px;
+    line-height: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #d3d3d3;
+    text-align: left;
+}
+.right th {
+    border-top: 2px solid #1097d0;
+    background: #efefef;
+    color: #888;
+    font-weight: normal;
+}
+.right table .ac {
+    text-align: center;
+}
+.right table .blue {
+    color: #0083be;
+}
+.right table .num {
+    padding-left: 20px;
+}
+.right table.my-loan {
+    font-size: 12px;
+}
+.right table.my-loan {
+    font-size: 12px;
+}
+.right table.my-loan .num {
+    padding-left: 0px;
+}
+.right table.my-loan th, .right table.my-loan td {
+    text-align: center;
+}
+.right table .icon-show {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-top: -2px;
+    background: url(res/arrow.png) no-repeat;
+    vertical-align: middle;
+}
+.right table.my-loan td {
+    position: relative;
+}
+.right .show-info {
+    display: none;
+    position: absolute;
+    top: 51px;
+    right: 0px;
+    z-index: 99;
+    width: 656px;
+    padding: 10px 20px 20px;
+    border: 1px solid #d3d3d3;
+    border-top: none;
+    background: #fff;
+    text-align: left;
+}
+.right .show-info h2 {
+    margin-bottom: 25px;
+    line-height: 40px;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 20px;
+    color: #333;
+}
+.show-info span {
+    display: inline-block;
+    width: 120px;
+    padding-left: 10px;
+}
+.show-info span.money {
+    width: 300px;
+}
+.show-info span.money2 {
+    width: 80px;
+}
+.show-info span strong {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+.show-info .loan-steps {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.show-info .loan-steps li {
+    float: left;
+    width: 86px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.show-info .loan-steps li i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 23px;
+    margin-bottom: 5px;
+    font-style: normal;
+    background: url(res/steps02.png) no-repeat -237px 0px;
+}
+.show-info .loan-steps li.ok i {
+    background-position: -64px 0px;
+    text-indent: -9999px;
+}
+.show-info .loan-steps li:first-child i {
+    background: url(res/default.png) no-repeat 23px 0px;
+}
+.show-info .loan-steps li:last-child i {
+    background: url(res/steps02.png) no-repeat -325px 0px;
+}
+.show-info .loan-steps li:first-child.ok i {
+    background: url(res/steps02.png) no-repeat 23px 0px;
+}
+.show-info .loan-steps li:last-child.ok i {
+    background: url(res/ok.png) no-repeat -20px 0px;
+    text-indent: -9999px;
+}
+.show-info  li.false i {
+    background-position: -150px 0px;;
+    text-indent: -9999px;
+}
+.show-info  li p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #888;
+}
+.right .show-info.pay-off {
+    width: 696px;
+    padding: 0;
+}
+.right .pay-off th ,.right .pay-off td {
+    padding: 5px 0;
+    border-top: none;
+}

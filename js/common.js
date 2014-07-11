@@ -38,6 +38,9 @@
             $('.nav .menu').bind('mouseenter mouseleave', function() {
                 $(this).find('div,span').toggleClass('hidden');
             });
+            // $('.nav .menu').bind('mouseleave', function() {
+            // $(this).find('div').addClass('hidden');
+            // });
         } catch(e) {
 
         }

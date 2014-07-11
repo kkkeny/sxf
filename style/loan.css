@@ -213,3 +213,175 @@
     background: url(res/big-green-btn.png) no-repeat;
     cursor: pointer;
 }
+/*开心店*/
+.new-shop {
+    position: relative;
+    width: 790px;
+    padding: 0 138px 20px 20px;
+    margin: 0 auto 20px;
+    border: 1px solid #d3d3d3;
+    line-height: 32px;
+    font-size: 14px;
+    color: #888;
+    background: #fff;
+}
+.new-shop .menu {
+    width: 790px;
+    height: 45px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.new-shop h2 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+}
+.new-shop .menu span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+    background-image: url(res/icon8.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.new-shop .menu span.icon1 {
+    background-position: 0 0;
+}
+.new-shop .menu span.icon2 {
+    background-position: -30px 0;
+}
+.new-shop .menu span.icon3 {
+    background-position: -58px 0;
+}
+.new-shop .menu span.icon4 {
+    background-position: -86px 0;
+}
+.new-shop .icon-bid {
+    position: absolute;
+    top: 4px;
+    right: 18px;
+    width: 103px;
+    height: 127px;
+    background: url(res/icon-bid.png) no-repeat;
+}
+.new-shop .new-shop-l {
+    float: left;
+    width: 484px;
+    border-right: 1px solid #d3d3d3;
+}
+.new-shop .shop-items {
+    float: left;
+    width: 222px;
+    margin-right: 20px;
+}
+.new-shop i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: -2px;
+    margin-left: 8px;
+    background: url(res/icon9.png) no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.shop-items p {
+    margin-bottom: 35px;
+}
+.shop-items p:first-child {
+    margin-bottom: 10px;
+}
+.shop-items p strong {
+    font-size: 36px;
+    font-weight: bold;
+}
+.shop-items .c3 {
+    color: #333;
+}
+.shop-items .progress {
+    display: inline-block;
+    width: 110px;
+    margin-top: -3px;
+    margin-left: 7px;
+    vertical-align: middle;
+}
+.new-shop .new-shop-r {
+    float: left;
+    width: 280px;
+    margin: 0 0 0 25px;
+}
+.new-shop-r dt {
+    float: left;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.new-shop-r dd {
+    float: left;
+    width: 180px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.new-shop-r dd select {
+    width: 162px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #d3d3d3;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+.new-shop-r strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a1c700;
+}
+.new-shop-r .count {
+    position: relative;
+    width: 152px;
+    height: 42px;
+    padding-left: 10px;
+    line-height: 42px;
+    background: url(res/add-bg.gif) no-repeat;
+}
+.new-shop-r .count span {
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.new-shop-r .count span.add-btn {
+    top: 30px;
+}
+.new-shop-r .count span.plus-btn {
+    bottom: 30px;
+}
+.new-shop-r .green-btn {
+    margin-left: 100px;
+}
+.new-shop-info {
+    margin-bottom: 0;
+}
+.new-shop-info .info {
+    padding: 30px 90px;
+    text-align: center;
+}
+.new-shop-info .green-btn {
+    margin-top: 35px;
+}
+.new-shop-info table {
+    width: 100%;
+    text-align: left;
+}
+.new-shop-info td {
+    padding: 12px 0;
+    line-height: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 14px;
+    color: #888;
+}
+.new-shop-info td.c3 {
+    color: #333;
+}

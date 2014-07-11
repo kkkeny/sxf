@@ -348,15 +348,15 @@
     position: absolute;
     right: 0px;
     display: inline-block;
-    width: 20px;
+    width: 30px;
     height: 20px;
     cursor: pointer;
 }
 .new-shop-r .count span.add-btn {
-    top: 30px;
+    top: 0px;
 }
 .new-shop-r .count span.plus-btn {
-    bottom: 30px;
+    bottom: 0px;
 }
 .new-shop-r .green-btn {
     margin-left: 100px;

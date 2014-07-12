@@ -26,6 +26,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+.d-hidden {
+    display: none;
+}
 .hidden {
     visibility: hidden;
 }
@@ -35,6 +38,9 @@ span.hidden {
 }
 .clearfix {
     clear: both;
+}
+.tl{
+    text-align: left !important;
 }
 /*进度条*/
 .progress {
@@ -130,7 +136,7 @@ span.hidden {
     width: 135px;
     height: 90px;
     margin: 0;
-    border-top: none!important;
+    border-top: none !important;
 }
 .nav .menu a {
     display: block;
@@ -140,7 +146,7 @@ span.hidden {
     border-bottom: 1px dashed;
     font-weight: normal;
 }
-.nav .menu a.channel,.nav .menu a.list {
+.nav .menu a.channel, .nav .menu a.list {
     line-height: 85px;
     border-bottom: none;
     font-weight: bold;
@@ -261,7 +267,7 @@ span.hidden {
     text-align: center;
     vertical-align: middle;
 }
-.right .meg {
+.meg {
     padding: 5px 10px;
     line-height: 20px;
     border: 1px solid #d3d3d3;

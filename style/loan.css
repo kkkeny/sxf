@@ -1,4 +1,3 @@
-
 .hidden {
     display: none;
 }
@@ -267,10 +266,21 @@
     height: 127px;
     background: url(res/icon-bid.png) no-repeat;
 }
+.new-shop.full .icon-bid {
+    width: 102px;
+    background: url(res/icon-full.png) no-repeat;
+}
+.new-shop.return .icon-bid {
+    width: 102px;
+    background: url(res/icon-return.png) no-repeat;
+}
 .new-shop .new-shop-l {
     float: left;
     width: 484px;
     border-right: 1px solid #d3d3d3;
+}
+.new-shop.full .new-shop-l,.new-shop.return .new-shop-l {
+    border: none;
 }
 .new-shop .shop-items {
     float: left;
@@ -358,10 +368,10 @@
 .new-shop-r .count span.plus-btn {
     bottom: 0px;
 }
-.new-shop-r .count input{
-    border:none;
+.new-shop-r .count input {
+    border: none;
     display: inline;
-    width:75%;
+    width: 75%;
 }
 .new-shop-r .green-btn {
     margin-left: 100px;

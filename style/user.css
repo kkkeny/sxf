@@ -36,6 +36,8 @@
     top: -51px;
     left: -1px;
     height: 50px;
+    *top: -50px;
+    top: -50px \9\0;
 }
 .right .tabbar li {
     float: left;
@@ -80,7 +82,7 @@
     line-height: 20px;
     padding: 15px 0;
     border-bottom: 1px solid #d3d3d3;
-    text-align: left;
+    /*text-align: left;*/
 }
 .right th {
     border-top: 2px solid #1097d0;
@@ -95,13 +97,34 @@
     color: #0083be;
 }
 .right table .num {
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 .right table.my-loan {
     font-size: 12px;
 }
-.right table.my-loan {
-    font-size: 12px;
+.right table.my-loan.tools-2 {
+    background-color: #fafafa;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+.tools-2-1 {
+    font-size: 0.85em;
+}
+.tools-2-1 span {
+    font-size: 1.4em;
+    color: #333;
+}
+.tools-2-2 {
+    text-align: center;
+}
+/*灰色按钮*/
+.tools-2-2 .green-btn {
+    background-image: url(res/green-btn-grey.png);
+    color: #333;
+}
+.tools-2-2 .green-btn.done {
+    background-image: url(res/green-btn-grey-2.png);
+    color: #888;
 }
 .right table.my-loan .num {
     padding-left: 0px;
@@ -114,7 +137,7 @@
     width: 17px;
     height: 17px;
     margin-top: -2px;
-    background: url(res/arrow.png) no-repeat;
+    background: url(res/arrow.png) no-repeat center -35px;
     vertical-align: middle;
 }
 .right table.my-loan td {

@@ -38,9 +38,21 @@
             $('.nav .menu').bind('mouseenter mouseleave', function() {
                 $(this).find('div,span').toggleClass('hidden');
             });
-            // $('.nav .menu').bind('mouseleave', function() {
-            // $(this).find('div').addClass('hidden');
-            // });
+            $('.icon-show').toggle(function() {
+                with ($('.icon-show')) {
+                    css('background-position-y', '-35px');
+                    next('div.show-info').hide();
+                }
+                with ($(this)) {
+                    css('background-position-y', '0px');
+                    next('div.show-info').show();
+                }
+            }, function() {
+                with ($(this)) {
+                    css('background-position-y', '-35px');
+                    next('div.show-info').hide();
+                }
+            });
         } catch(e) {
 
         }

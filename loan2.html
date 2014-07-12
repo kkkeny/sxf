@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>我要贷款2</title>
-        
+
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/loan.css">
     </head>
@@ -55,41 +55,58 @@
                 <div class="loan-form">
                     <form action="" method="" id="loanForm" name="loanForm">
                         <dl>
-                            <dt>您的称呼：</dt>
+                            <dt>
+                                您的称呼：
+                            </dt>
                             <dd>
                                 <input type="text" class="input-txt" name="username" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
                                 <span class="Validform_checktip error"></span>
                             </dd>
-                            <dt>手机号：</dt>
+                            <dt>
+                                手机号：
+                            </dt>
                             <dd>
                                 <input type="text" class="input-txt" name="telphone" datatype="m" errormsg="请输入您的手机号码！" nullmsg="输入有误"/>
                                 <span class="Validform_checktip error"></span>
                             </dd>
-                            <dt>性别：</dt>
+                            <dt>
+                                性别：
+                            </dt>
                             <dd>
                                 <label><input type="radio" name="sex" value="0" checked="checked"/>男</label>
                                 <label><input type="radio" name="sex" value="1"/>女</label>
                             </dd>
-                            <dt>所在城市：</dt>
+                            <dt>
+                                所在城市：
+                            </dt>
                             <dd>
                                 <input type="text" id="res" value="" name="city"/>
-                                <select id="s_province" runat="server" name="s_province"></select>
-                                <select id="s_city" runat="server" name="s_city"></select>
+                                <select id="s_province" name="s_province"></select>
+                                <select id="s_city" name="s_city"></select>
+                                <span class="Validform_checktip error"></span>
                             </dd>
-                            <dt>借款金额：</dt>
+                            <dt>
+                                借款金额：
+                            </dt>
                             <dd>
                                 <input type="text" class="input-txt" name="loannum" datatype="n" errormsg="输入有误" nullmsg="不能为空"/>
                                 <span class="Validform_checktip error"></span>
                             </dd>
-                            <dt>借款用途：</dt>
+                            <dt>
+                                借款用途：
+                            </dt>
                             <dd>
                                 <input type="text" class="input-txt" name="loanuse" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
                                 <span class="Validform_checktip error"></span>
                             </dd>
                         </dl>
                         <div class="btns">
-                            <button class="green-btn">同意协议，提交订单</button>
-                            <p><a href="#">《投资协议》</a></p>
+                            <button class="green-btn">
+                                同意协议，提交订单
+                            </button>
+                            <p>
+                                <a href="#">《投资协议》</a>
+                            </p>
                         </div>
                         <div id="info11"></div>
                     </form>
@@ -98,12 +115,21 @@
         </div>
         <div class="footer"></div>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-        
+
         <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/area.js"></script>
         <script type="text/javascript" src="js/validform-min.js"></script>
         <script>
-            $("#loanForm").Validform({tiptype:3});
+            $("#loanForm").Validform({
+                tiptype : 3,
+                callback : function(form) {
+                    var select = form.find('select')[1];
+                    if (select.selectedIndex === 0) {
+                        alert('请选择地址');
+                        return false;
+                    }
+                }
+            });
         </script>
     </body>
 </html>

@@ -17,7 +17,7 @@
     line-height: 40px;
     font-size: 14px;
 }
-.left li a:hover ,.left li a.current {
+.left li a:hover, .left li a.current {
     font-weight: bold;
     background: #1097d0;
     color: #fff;
@@ -54,7 +54,7 @@
     background: #f9f9f9;
     text-align: center;
 }
-.right .tabbar li a:hover ,.right .tabbar li a.current {
+.right .tabbar li a:hover, .right .tabbar li a.current {
     border-top: 3px solid #1097d0;
     border-bottom: 1px solid #fff;
     background: #fff;
@@ -65,6 +65,15 @@
 }
 .right .select {
     margin-bottom: 30px;
+}
+.right .select .date_ {
+    width: 162px;
+    height: 42px;
+    border: none;
+    margin: 0 1em;
+    background: url(res/input-date-bg.gif) no-repeat center center;
+    cursor: pointer;
+    text-indent: 1em;
 }
 .right th, .right td {
     height: 20px;
@@ -199,7 +208,7 @@
     width: 696px;
     padding: 0;
 }
-.right .pay-off th ,.right .pay-off td {
+.right .pay-off th, .right .pay-off td {
     padding: 5px 0;
     border-top: none;
 }

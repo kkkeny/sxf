@@ -140,8 +140,9 @@
     background: url(res/arrow.png) no-repeat center -35px;
     vertical-align: middle;
 }
-.right table.my-loan td {
+.right table.my-loan td.jump {
     position: relative;
+    
 }
 .right .show-info {
     display: none;
@@ -155,6 +156,7 @@
     border-top: none;
     background: #fff;
     text-align: left;
+    line-height: 36px;
 }
 .right .show-info h2 {
     margin-bottom: 25px;

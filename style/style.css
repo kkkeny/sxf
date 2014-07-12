@@ -26,6 +26,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+iframe {
+    border: 0;
+    z-index: 999;
+    background-color: red;
+}
 .d-hidden {
     display: none;
 }
@@ -39,7 +44,7 @@ span.hidden {
 .clearfix {
     clear: both;
 }
-.tl{
+.tl {
     text-align: left !important;
 }
 /*进度条*/

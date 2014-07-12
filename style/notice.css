@@ -12,6 +12,9 @@
 .notice .success_ {
     color: #abcd05 !important;
 }
+.notice .fail_ {
+    color: #f22727 !important;
+}
 .notice .menu h2 {
     display: inline-block;
     margin-right: 10px;
@@ -26,6 +29,10 @@
     background-image: url(res/icon8.png);
     background-repeat: no-repeat;
     vertical-align: middle;
+}
+.notice .menu h2, .notice .menu span {
+    *display: inline;
+    *zoom: 1;
 }
 .notice .menu span.icon1 {
     background-position: 0 0;
@@ -60,16 +67,20 @@
     background-image: url(res/green-btn-grey-3.png);
     color: #333;
 }
-.notice .success_ span.icon1 {
-    width: 40px;
-    height: 40px;
-    background: url(res/ok.png) no-repeat -43px center;
+.notice .success_ span.icon1, .notice .fail_ span.icon1 {
+    width: 18px;
+    height: 18px;
     /*zoom: 0.62;*/
-    margin-top: -9px;
+    margin-top: -6px;
     margin-right: 0.5em;
-    zoom: 0.62;
     *float: left;
-    *margin-top: 8px;
+    *margin-top: 10px;
+}
+.notice .success_ span.icon1 {
+    background: url(res/icon-ok-fail.png) no-repeat 0 center;
+}
+.notice .fail_ span.icon1 {
+    background: url(res/icon-ok-fail.png) no-repeat -18px center;
 }
 .notice .tl {
     padding: 0 4%;

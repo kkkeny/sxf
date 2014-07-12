@@ -35,22 +35,23 @@
             });
         }
         try {
+            
             $('.nav .menu').bind('mouseenter mouseleave', function() {
                 $(this).find('div,span').toggleClass('hidden');
-            });
+            });            
             $('.icon-show').toggle(function() {
                 with ($('.icon-show')) {
                     css('background-position-y', '-35px');
-                    next('div.show-info').hide();
+                    siblings('div.show-info').hide();
                 }
                 with ($(this)) {
                     css('background-position-y', '0px');
-                    next('div.show-info').show();
+                    siblings('div.show-info').show();
                 }
             }, function() {
                 with ($(this)) {
                     css('background-position-y', '-35px');
-                    next('div.show-info').hide();
+                    siblings('div.show-info').hide();
                 }
             });
         } catch(e) {

@@ -135,25 +135,23 @@
 .right table .icon-show {
     display: inline-block;
     width: 17px;
-    height: 17px;
+    height: 18px;
     margin-top: -2px;
-    background: url(res/arrow.png) no-repeat center -35px;
+    background: url(res/arrow.png) no-repeat center -34px;
     vertical-align: middle;
 }
-.right table.my-loan td.jump {
+.right table.my-loan .jump {
     position: relative;
-    
 }
 .right .show-info {
     display: none;
     position: absolute;
     top: 51px;
-    right: 0px;
+    right: 38px;
     z-index: 99;
     width: 656px;
     padding: 10px 20px 20px;
     border: 1px solid #d3d3d3;
-    border-top: none;
     background: #fff;
     text-align: left;
     line-height: 36px;

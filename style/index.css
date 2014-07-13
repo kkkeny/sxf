@@ -102,8 +102,13 @@ td.c-1-3_ {
 .c-4_ .short {
     width: 2em;
 }
-.c-4_ .short:hover {
+.c-4_ td:hover {
     color: #0085be;
+}
+.c-4_ td img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
 }
 .c-4_ .progress_ {
     width: 137px;

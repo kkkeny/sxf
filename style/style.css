@@ -78,6 +78,14 @@ span.hidden {
     background-color: #abcd04;
     width: 0;
 }
+.progress.org .back {
+    background-color: #efe2cc;
+}
+.progress.org .max .front {
+    background-color: #f1ad38;
+    width: 0;
+}
+
 /*end*/
 .login, .nav, .bread {
 

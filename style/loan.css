@@ -73,6 +73,35 @@
 .conditions ul li span.cond04 {
     background-position: -397px 0px;
 }
+.wylc ul li {
+    width: 209px;
+    border-right: 1px solid #d3d3d3;
+}
+.wylc ul li.last {
+    width: 210px;
+    border: none;
+}
+.wylc ul li span {
+    width: 73px;
+    height: 52px;
+    background-image: url(res/icon-lc.png);
+}
+.wylc ul li span.cond01 {
+    background-position: 0px 0px;
+}
+.wylc ul li span.cond02 {
+    background-position: -73px 0px;
+}
+.wylc ul li span.cond03 {
+    background-position: -146px 0px;
+}
+.wylc ul li span.cond04 {
+    background-position: -219px 0px;
+}
+.wylc ul li h1 {
+    color: #333;
+    line-height: 2em;
+}
 .conditions ul li p {
     height: 43px;
     line-height: 43px;
@@ -238,7 +267,7 @@
     font-size: 20px;
     color: #333;
     *display: inline;
-    *zoom:1;
+    *zoom: 1;
 }
 .new-shop .menu span {
     display: inline-block;
@@ -407,9 +436,24 @@
 }
 #s_city {
     float: right;
-    margin-top:2px;
-    *margin-top:0px;
-    margin-top:1px \9\0;
+    margin-top: 2px;
+    *margin-top: 0px;
+    margin-top: 1px \9\0;
     *position: absolute;
     *right: 0;
+}
+.jsq {
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 30px;
+    background: url(res/jsq.png) no-repeat left center;
+    color: #0083be;
+}
+.wylc.c-4_{
+    background: none;
+}
+.wylc.c-4_ table{
+    background: #fff;
 }

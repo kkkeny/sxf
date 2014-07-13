@@ -26,11 +26,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-iframe {
-    border: 0;
-    z-index: 999;
-    background-color: red;
-}
 .d-hidden {
     display: none;
 }
@@ -71,6 +66,10 @@ span.hidden {
 .progress span {
     font-size: 14px;
     /*margin-left: 2%;*/
+    display: inline-block;
+    width: 20%;
+    line-height: 18px;
+    text-indent: .5em;
 }
 .progress .back {
     background-color: #e1e7c5;
@@ -138,14 +137,15 @@ span.hidden {
 }
 .nav .menu {
     position: relative;
-    width: 135px;
+    /*width: 135px;*/
+    *width: 96px;
     height: 90px;
-    margin: 0;
+    margin: 0 2em;
     border-top: none !important;
 }
 .nav .menu a {
     display: block;
-    width: 90%;
+    /*width: 90%;*/
     line-height: 2.2em;
     margin: 0 auto;
     border-bottom: 1px dashed;
@@ -166,7 +166,8 @@ span.hidden {
 .nav .menu div {
     position: absolute;
     top: 90px;
-    left: 0px;
+    left: -20px;
+    *left: -15px;
     z-index: 999;
     width: 135px;
     background-color: #fff;
@@ -257,10 +258,17 @@ span.hidden {
     line-height: 30px;
     border: 1px solid #d3d3d3;
     vertical-align: middle;
+    cursor:default;
 }
 .page a:hover, .page a.current {
     color: #fff;
     background: #1097d0;
+}
+.page a.nogo{
+    background: #d3d3d3;
+}
+.page a.nogo:hover{
+    color: #888;
 }
 .page input {
     width: 30px;

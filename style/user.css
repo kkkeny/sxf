@@ -1,3 +1,6 @@
+table {
+    width: auto;
+}
 .hidden {
     display: none;
 }
@@ -71,11 +74,13 @@
 .right .select .date_ {
     width: 162px;
     height: 42px;
+    line-height: 42px;
     border: none;
     margin: 0 1em;
     background: url(res/input-date-bg.gif) no-repeat center center;
     cursor: pointer;
     text-indent: 1em;
+    vertical-align: middle;
 }
 .right th, .right td {
     height: 20px;
@@ -235,3 +240,7 @@
     padding: 5px 0;
     border-top: none;
 }
+/*.green-btn{
+    *display: inline;
+    *zoom:1;
+}*/

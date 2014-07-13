@@ -12,8 +12,8 @@
             return;
         }
         left = parseInt(left / 1000);
-        var h = parseInt(left / 3600), m = parseInt((left % 3600) / 60);
-        str = '';
+        var d = parseInt(left / 86400), h = parseInt((left % 86400) / 3600), m = parseInt((left % 3600) / 60);
+        str = '' + (d > 0 ? (d + '天') : '');
         str += h + '小时';
         str += m + '分';
         str += (left % 60) + '秒';
@@ -30,6 +30,19 @@
             step = -step;
         current += step;
         current = current < 0 ? 0 : current;
-        $('.count input').val(current + '元');
+        $('.count input[type="text"]').val(current + '元');
+    });
+    $('#new-submit').click(function() {
+        $('#new').submit();
+        return false;
+    });
+    $('#new').bind('submit', function() {
+        var form = $(this), money = form.find('input[name="money"]'), num = parseFloat(money.val());
+        if (isNaN(num) || num <= 0) {
+            alert('请重新输入金额');
+            return false;
+        }
+        money.val(num);
+        return true;
     });
 })();

@@ -6,12 +6,12 @@
 
     Dsy.prototype.add = function(id, iArray) {
         this.Items[id] = iArray;
-    }
+    };
     Dsy.prototype.Exists = function(id) {
         if ( typeof (this.Items[id]) == "undefined")
             return false;
         return true;
-    }
+    };
     function change(v) {
         var str = "0";
         for ( i = 0; i < v; i++) {

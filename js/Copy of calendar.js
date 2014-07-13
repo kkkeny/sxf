@@ -226,14 +226,14 @@ var n = 0;
 for (var i = 0; i < 5; i++) {
     document.write(' <tr align=center id="trTiannetDay' + i + '" >');
     for (var j = 0; j < 7; j++) {
-        document.write('<td align="center" id="tdTiannetDay' + n + '" ' + 'onClick="tiannetDay=this.innerHTML;tiannetSetValue(true);" ' + ' style="' + s_tiannet_day + '">&nbsp;</td>');
+        document.write('<td align="center" id="tdTiannetDay' + n + '" ' + 'onClick="tiannetDay=this.innerText;tiannetSetValue(true);" ' + ' style="' + s_tiannet_day + '">&nbsp;</td>');
         n++;
     }
     document.write(' </tr>');
 }
 document.write(' <tr align=center id="trTiannetDay5" >');
-document.write('<td align="center" id="tdTiannetDay35" onClick="tiannetDay=this.innerHTML;tiannetSetValue(true);" ' + ' style="' + s_tiannet_day + '">&nbsp;</td>');
-document.write('<td align="center" id="tdTiannetDay36" onClick="tiannetDay=this.innerHTML;tiannetSetValue(true);" ' + ' style="' + s_tiannet_day + '">&nbsp;</td>');
+document.write('<td align="center" id="tdTiannetDay35" onClick="tiannetDay=this.innerText;tiannetSetValue(true);" ' + ' style="' + s_tiannet_day + '">&nbsp;</td>');
+document.write('<td align="center" id="tdTiannetDay36" onClick="tiannetDay=this.innerText;tiannetSetValue(true);" ' + ' style="' + s_tiannet_day + '">&nbsp;</td>');
 document.write('<td align="right" colspan="5"><a href="javascript:tiannetClear();" style="' + s_tiannet_link + '">清空</a>' + '&nbsp;<a href="javascript:tiannetHideControl();" style="' + s_tiannet_link + '">关闭</a>' + '&nbsp;<a href="javascript:tiannetSetValue(true);" style="' + s_tiannet_link + '">确定</a>&nbsp;' + '</td>');
 document.write(' </tr>');
 document.write('</table>');
@@ -411,12 +411,12 @@ function tiannetNextMonth() {
 
 //向span标签中写入年、月、时、分等数据
 function tiannetWriteHead() {
-    document.all.tiannetYearHead.innerHTML = tiannetYear + "年";
-    document.all.tiannetMonthHead.innerHTML = tiannetMonth + "月";
+    document.all.tiannetYearHead.innerText = tiannetYear + "年";
+    document.all.tiannetMonthHead.innerText = tiannetMonth + "月";
     if (m_bolShowHour)
-        document.all.tiannetHourHead.innerHTML = " " + tiannetHour + "时";
+        document.all.tiannetHourHead.innerText = " " + tiannetHour + "时";
     if (m_bolShowMinute)
-        document.all.tiannetMinuteHead.innerHTML = tiannetMinute + "分";
+        document.all.tiannetMinuteHead.innerText = tiannetMinute + "分";
     tiannetSetValue(false);
     //给文本框赋值，但不隐藏本控件
 }

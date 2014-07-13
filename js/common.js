@@ -41,23 +41,25 @@
             });
             $('.icon-show').click(function() {
                 var icon = $(this);
-                with ($('.icon-show')) {
-                    css('background-position-y', '-35px');
-                    next('div.show-info').hide();
-                    $('.icon-show').removeClass('opened');
-                }
                 if (icon.hasClass('opened'))
                     with (icon) {
                         css('background-position-y', '-35px');
                         next('div.show-info').hide();
+                        removeClass('opened');
                     }
                 else {
+                    with ($('.icon-show')) {
+                        css('background-position-y', '-35px');
+                        next('div.show-info').hide();
+                        $('.icon-show').removeClass('opened');
+                    }
                     with (icon) {
                         css('background-position-y', '0px');
                         next('div.show-info').show();
+                        addClass('opened');
                     }
                 }
-                icon.toggleClass('opened');
+                console.log(111);
             });
         } catch(e) {
 

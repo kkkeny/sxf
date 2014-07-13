@@ -102,6 +102,9 @@ td.c-1-3_ {
 .c-4_ .short {
     width: 2em;
 }
+.c-4_ .short:hover {
+    color: #0085be;
+}
 .c-4_ .progress_ {
     width: 137px;
 }
@@ -113,5 +116,9 @@ td.c-1-3_ {
     width: 20%;
 }
 .c-4_ .name_ {
-    width: 10%;
+    width: 12%;
+}
+th.progress_ {
+    with: auto;
+    text-indent: -2em;
 }

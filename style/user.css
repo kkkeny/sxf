@@ -146,8 +146,8 @@ table {
     background: url(res/arrow.png) no-repeat center -34px;
     vertical-align: middle;
 }
-.right table .icon-show.opened {
-    background-position-y: 0;
+.right table.my-loan .jump {
+    position: relative;
 }
 .right table.my-loan td.table-open {
     padding: 0;
@@ -245,6 +245,6 @@ table {
     border-top: none;
 }
 /*.green-btn{
- *display: inline;
- *zoom:1;
- }*/
+    *display: inline;
+    *zoom:1;
+}*/

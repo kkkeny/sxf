@@ -43,26 +43,20 @@
                 var icon = $(this);
                 if (icon.hasClass('opened'))
                     with (icon) {
+                        css('background-position-y', '-35px');
+                        next('div.show-info').hide();
                         removeClass('opened');
-                        with (parents('tr').next('tr').children('td')) {
-                            removeClass('table-open');
-                            addClass('hidden');
-                        }
                     }
                 else {
                     with ($('.icon-show')) {
+                        css('background-position-y', '-35px');
+                        next('div.show-info').hide();
                         $('.icon-show').removeClass('opened');
-                        with ($('.icon-show').parents('tr').next('tr').children('td')) {
-                            removeClass('table-open');
-                            addClass('hidden');
-                        }
                     }
                     with (icon) {
-                        addClass('opened');                        
-                        with (parents('tr').next('tr').children('td')) {
-                            removeClass('hidden');
-                            addClass('table-open');
-                        }
+                        css('background-position-y', '0px');
+                        next('div.show-info').show();
+                        addClass('opened');
                     }
                 }
             });

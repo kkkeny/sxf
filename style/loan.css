@@ -177,14 +177,17 @@
     width: 446px;
     margin: 50px auto;
 }
-.loan-form dt {
+.loan-form dt, .cal-form dt {
     float: left;
     width: 100px;
     height: 42px;
     margin-bottom: 20px;
     line-height: 42px;
 }
-.loan-form dd {
+.cal-form dt {
+    width: 70px;
+}
+.loan-form dd, .cal-form dd {
     position: relative;
     float: left;
     width: 346px;
@@ -192,13 +195,28 @@
     margin-bottom: 20px;
     line-height: 42px;
 }
-.loan-form dd .input-txt {
+.cal-form dd {
+    position: relative;
+    width: 190px;
+}
+.cal-form dd span.txt-font {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+.loan-form dd .input-txt, .cal-form dd .input-txt {
     width: 325px;
     height: 42px;
     padding: 0 10px;
     line-height: 42px;
     border: none;
     background: url(res/input-bg.gif) no-repeat;
+}
+.cal-form dd .input-txt {
+    width: 142px;
+    font-size: 14px;
+    color: #333;
+    background: url(res/small-input-bg.gif) no-repeat;
 }
 .loan-form dd span.error {
     position: absolute;
@@ -220,7 +238,7 @@
 #res {
     display: none;
 }
-.loan-form select {
+.loan-form select, .cal-form select {
     width: 160px;
     height: 40px;
     line-height: 40px;
@@ -461,4 +479,61 @@
 }
 .wylc.c-4_ table{
     background: #fff;
+}
+/*贷款计算器*/
+.cal-form {
+    padding: 30px 100px 20px 20px;
+}
+.cal-form dl {
+    overflow: hidden;
+}
+.cal-form .btns {
+    width: 728px;
+    *margin-top: 20px;
+    text-align: left;
+}
+.cal-form .btns button {
+    width: 162px;
+    margin-left: 230px;
+    background: url(res/green-btn.png) no-repeat;
+}
+.cal-result {
+    padding: 5px 20px 50px;
+    line-height: 24px;
+    border-top: 1px solid #d3d3d3;
+    color: #888;
+    background: url(res/cal-bg.jpg) no-repeat right bottom;
+}
+.cal-result h3 {
+    margin-top: 15px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.cal-result h3 span {
+    font-weight: normal;
+    color: #888;
+}
+.cal-result strong {
+    color: #99b800;
+    font-weight: bold;
+}
+.cal-result table {
+    width: 550px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.cal-result table th, .cal-result table td {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.cal-result table th {
+    border-bottom: 1px solid #d3d3d3;
+    font-weight: normal;
+    color: #888;
+}
+.cal-result table td {
+    border-top: 1px solid #eee;
+    color: #333;
 }

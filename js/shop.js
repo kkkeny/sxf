@@ -25,24 +25,42 @@
     })();
     //金额
     $('.count span').bind('click', function() {
-        var current = parseInt($('.count input').val()), step = 10000;
+        var max = parseInt($('#c-left').text().replace(',', '')), current = parseInt($('.count input').val()), step = 10000;
+        if (isNaN(max) || isNaN(current))
+            alert('请正确填写金额');
         if ($(this)[0].className.indexOf('plus') != -1)
             step = -step;
         current += step;
         current = current < 0 ? 0 : current;
+        current = current > max ? max : current;
         $('.count input[type="text"]').val(current + '元');
+        $('#c-date').trigger('change');
     });
     $('#new-submit').click(function() {
-        $('#new').submit();
+        var flag = true;
+        var form = $('#new'), money = form.find('input[name="money"]'), num = parseFloat(money.val());
+        num = isNaN(num) ? 0 : num;
+        if (num <= 0) {
+            alert('请重新输入金额');
+            flag = false;
+        }
+        money.val(num + '元');
+        if (flag)
+            $('#new').submit();
         return false;
     });
-    $('#new').bind('submit', function() {
-        var form = $(this), money = form.find('input[name="money"]'), num = parseFloat(money.val());
-        if (isNaN(num) || num <= 0) {
-            alert('请重新输入金额');
-            return false;
-        }
-        money.val(num);
-        return true;
+    //计算
+    $('#c-date').bind('change', function() {
+        var m = parseInt($(this).valueOf().val()), n = parseInt($('#c-money').val()), p = parseInt($('#c-p').text());
+        m = isNaN(m) ? 0 : m;
+        n = isNaN(n) ? 0 : n;
+        p = isNaN(p) ? 0 : p;
+        console.log(m + '<>' + n + '<>' + p);
+        $('#c-res').text(m * n * p / 100);
+
     });
+    $('#c-money').bind('input', function() {
+        $('#c-date').trigger('change');
+    });
+    $('#c-date').trigger('change');
 })();

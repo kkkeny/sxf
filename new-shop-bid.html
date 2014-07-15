@@ -80,7 +80,7 @@
                             年化利率
                         </p>
                         <p class="c3">
-                            <strong>8%</strong>
+                            <strong id="c-p">8%</strong>
                         </p>
                         <p>
                             审核方式：<span class="c3">实地认证、信用审核</span>
@@ -105,16 +105,16 @@
                                 委托投资期限
                             </dt>
                             <dd>
-                                <select>
-                                    <option>1个月</option>
-                                    <option>2个月</option>
+                                <select id="c-date">
+                                    <option value="1">1个月</option>
+                                    <option value="2">2个月</option>
                                 </select>
                             </dd>
                             <dt>
                                 剩余金额
                             </dt>
                             <dd>
-                                <strong>100,000元</strong><i title="等额本金是指：新消息" alt="等额本金是指：新消息"></i>
+                                <strong id="c-left">100,000元</strong><i title="等额本金是指：新消息" alt="等额本金是指：新消息"></i>
                             </dd>
                             <dt>
                                 投资金额
@@ -122,7 +122,7 @@
                             <dd>
                                 <div class="count">
                                     <!-- <label>10，000元</label> -->
-                                    <input type="text" value="10000元" name='money'/>
+                                    <input type="text" value="10000元" name='money' id="c-money"/>
                                     <span class="add-btn"></span>
                                     <span class="plus-btn"></span>
                                 </div>
@@ -130,12 +130,11 @@
                             <dt>
                                 预估收益
                             </dt>
-                            <dd>
-                                66.70元
+                            <dd id="c-res">
+                                计算中...
                             </dd>
                         </dl>
                         <a href="#" class="green-btn" id="new-submit">我要申请</a>
-                        <input type="submit" value="ok" />
                     </form>
                 </div>
                 <div class="clearfix"></div>

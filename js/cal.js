@@ -11,7 +11,7 @@
         var n = parseInt($('#c-money').val());
         var p = parseInt($('#c-p').val());
         var pay = parseInt($('#c-pay').val());
-        var tr = $('.c-tr');
+        var tr = $($('.c-tr')[0]);
         tr.parent().children(':not(:first)').remove();
         m = isNaN(m) ? 0 : m;
         n = isNaN(n) ? 0 : n;

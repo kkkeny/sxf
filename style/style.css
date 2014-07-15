@@ -108,7 +108,7 @@ span.hidden {
     position: relative;
     height: 90px;
     background-color: #fff;
-    z-index: 99;
+    z-index: 1;
 }
 .nav h1 {
     display: inline-block;
@@ -250,9 +250,52 @@ span.hidden {
 }
 /*底部*/
 .footer {
+    padding: 30px 0;
+    line-height: 24px;
     border-top: 1px solid #d3d3d3;
-    height: 120px;
+    font-size: 14px;
     background: #efefef;
+}
+.footer .footer-l {
+    float: left;
+    width: 720px;
+    margin-right: 25px;
+}
+.footer-l dl {
+    overflow: hidden;
+    margin: 10px 0;
+}
+.footer-l dt {
+    float: left;
+    width: 80px;
+    font-weight: bold;
+}
+.footer-l dd {
+    float: left;
+    width: 640px;
+}
+.footer-l dd a {
+    display: inline-block;
+    margin: 0 1px;
+}
+.footer .footer-r {
+    float: left;
+    width: 205px;
+    margin-top: 10px;
+}
+.footer-r .wenxin {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-top: 15px;
+    background: url(res/weixin.gif) no-repeat;
+}
+.footer-r .logo {
+    display: inline-block;
+    width: 135px;
+    height: 48px;
+    margin: 15px 0 0 15px;
+    background: url(res/footer-logo.jpg) no-repeat;
 }
 /*分页*/
 .page {
@@ -294,4 +337,53 @@ span.hidden {
     border: 1px solid #d3d3d3;
     background: #f8f8f8;
     color: #888;
+}
+/*弹窗样式*/
+#bg {
+    display: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop+(document.documentElement.clientHeight-this.offsetHeight)/2) );
+}
+.win {
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    width: 430px;
+    height: 550px;
+    padding: 3px;
+    margin-left: -215px;
+    margin-top: -275px;
+    background: #fff;
+    position: fixed;
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop+(document.documentElement.clientHeight-this.offsetHeight)/2) );
+    _margin-top: 0;
+}
+.win img {
+    width: 430px;
+    height: 555px;
+}
+.win span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(res/close.png) no-repeat;
+    cursor: pointer;
 }

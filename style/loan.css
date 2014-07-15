@@ -125,11 +125,13 @@
     height: 142px;
     padding: 2px;
     border: 1px solid #d3d3d3;
+    cursor: pointer;
 }
 .data li p {
     margin-top: 20px;
     font-size: 14px;
     color: #888;
+    cursor: pointer;
 }
 /*贷款方式及费用*/
 .fees {
@@ -200,7 +202,7 @@
 }
 .loan-form dd span.error {
     position: absolute;
-    left: 450px;
+    left: 360px;
     width: 200px;
     top: 0px;
     font-size: 14px;
@@ -224,6 +226,9 @@
     line-height: 40px;
     border: 1px solid #d3d3d3;
     padding: 10px 0;
+}
+.loan-form select.use {
+    width: 345px;
 }
 .btns a, .btns a:hover {
     font-size: 14px;

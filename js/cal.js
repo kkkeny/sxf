@@ -30,13 +30,13 @@
             tr.parent().append(tr.clone());
         }
         tr.parent().children().each(function(i) {
-            var tr = $(this), sm = i + 1, lx = (n * (sm - (sm - 1)) / sm * p / 100 / 12);
+            var tr = $(this), lx = (n * (m - i) / m * p / 100 / 12);
             lx = Math.round((lx) * 100) / 100;
             tr.children().each(function(index) {
                 var td = $(this);
                 switch(index) {
                     case 0:
-                        td.text('第' + sm + '个月');
+                        td.text('第' + (i + 1) + '个月');
                         break;
                     case 1:
                         td.text(Math.round((benjin + fwf + lx) * 100) / 100);

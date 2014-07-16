@@ -34,7 +34,7 @@ table {
     background: #fff;
     border: 1px solid #d3d3d3;
 }
-.right .tabbar {
+.tabbar {
     position: absolute;
     top: -51px;
     left: -1px;
@@ -42,14 +42,14 @@ table {
     *top: -50px;
     top: -50px \9\0;
 }
-.right .tabbar li {
+.tabbar li {
     float: left;
     width: 132px;
     margin-right: 8px;
     border: 1px solid #d3d3d3;
     border-bottom: none;
 }
-.right .tabbar li a {
+.tabbar li a {
     display: block;
     width: 132px;
     line-height: 46px;
@@ -59,13 +59,13 @@ table {
     background: #f9f9f9;
     text-align: center;
 }
-.right .tabbar li a:hover, .right .tabbar li a.current {
+.tabbar li a:hover, .tabbar li a.current {
     border-top: 3px solid #1097d0;
     border-bottom: 1px solid #fff;
     background: #fff;
     color: #333;
 }
-.right .tabbar li a.current {
+.tabbar li a.current {
     font-weight: bold;
 }
 .right .select {
@@ -138,16 +138,13 @@ table {
 .right table.my-loan th, .right table.my-loan td {
     text-align: center;
 }
-.right table .icon-show {
+.right table .icon-show, .problem li h3 em {
     display: inline-block;
     width: 17px;
     height: 18px;
     margin-top: -2px;
     background: url(res/arrow.png) no-repeat center -34px;
     vertical-align: middle;
-}
-.right table .icon-show.opened {
-    background-position-y: 0;
 }
 .right table.my-loan td.table-open {
     padding: 0;
@@ -164,6 +161,9 @@ table {
 }
 .right .table-open .show-info {
     display: block;
+}
+.right table .icon-show.opened {
+    background-position-y: 0;
 }
 .right .show-info h2 {
     margin-bottom: 25px;
@@ -248,3 +248,220 @@ table {
     *display: inline;
     *zoom:1;
 }*/
+/*常见问题*/
+.problem {
+    padding: 50px 0;
+    *padding: 100px 0 50px
+}
+.problem .warp {
+    position: relative;
+    width: 948px;
+    margin-top: 50px;
+    *margin-top: 100px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+}
+.problem .info {
+    padding: 30px 25px;
+    line-height: 24px;
+}
+.problem .info li {
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+}
+.problem .info li h3 {
+    position: relative;
+    height: 50px;
+    padding: 0 25px 0 20px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    background: #efefef;
+}
+.problem .info li h3 em {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.problem .info li .detail {
+    padding: 10px 20px;
+    border-top: 1px solid #d3d3d3;
+}
+.problem .info li h3.opened em {
+    background: url(res/arrow.png) no-repeat center 0px;
+}
+/*我的账户*/
+.content .account {
+    width: 740px;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+.account .box {
+    width: 738px;
+}
+.account .menu span {
+    float: right;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+.account .bal dl {
+    overflow: hidden;
+    width: 620px;
+    padding: 20px 20px 20px 10px;
+    line-height: 30px;
+}
+.account .bal dt {
+    float: left;
+    width: 85px;
+    text-align: right;
+}
+.account .bal dd {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+.account .account-list {
+    padding: 10px 15px 30px;
+}
+.account .box table {
+    float: left;
+    width: 440px;
+    text-align: left;
+}
+.account table td {
+    padding: 13px 0;
+}
+.account table .icon-circle {
+    padding: 13px 0 13px 20px;
+    background: url(res/icon-circle.gif) no-repeat left center;
+}
+.account .list-r {
+    float: left;
+    width: 184px;
+    height: 85px;
+    margin: 20px 0 0 20px;
+    padding: 18px 30px;
+    line-height: 40px;
+    color: #fff;
+    background: url(res/account-bg02.png) no-repeat;
+}
+.account .yellow-bg {
+    background: url(res/account-bg01.png) no-repeat;
+}
+/*账户信息*/
+.info-form {
+    width: 738px;
+    margin-top: 20px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+}
+.info-form h2 {
+    height: 35px;
+    padding: 0 20px;
+    line-height: 35px;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 14px;
+    font-weight: normal;
+    background: #f9f9f9;
+}
+.info-form form {
+    margin: 20px 120px;
+    *overflow: hidden;
+}
+.info-form h3 {
+    padding-left: 10px;
+    margin: 40px 0 30px;
+    border-left: 3px solid #c1c1c1;
+    color: #bababa;
+}
+.info-form dt {
+    float: left;
+    width: 100px;
+    height: 42px;
+    margin-bottom: 20px;
+    line-height: 42px;
+}
+.info-form dd {
+    float: left;
+    width: 345px;
+    height: 42px;
+    margin-bottom: 20px;
+    line-height: 42px;
+}
+.info-form dd label {
+    position: relative;
+}
+.info-form dd label span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.info-form dd .input-txt {
+    width: 325px;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    border: none;
+    font-size: 14px;
+    background: url(res/input-bg.gif) no-repeat;
+}
+.info-form dd .input-02 {
+    width: 92px;
+    margin-left: 5px;
+    background: url(res/small-input-bg02.gif) no-repeat;
+}
+.info-form select {
+    width: 345px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d3d3d3;
+    padding: 10px 0;
+}
+.info-form .select-02 {
+    width: 155px;
+    vertical-align: middle;
+}
+.info-form .select-03 {
+    width: 105px;
+    *width: 110px;
+}
+.info-form dd span.error {
+    position: absolute;
+    left: 360px;
+    width: 140px;
+    top: 0px;
+    font-size: 14px;
+    color: #f51414;
+}
+.info-form dd span.Validform_right {
+    display: none;
+}
+.info-form dd label {
+    float: left;
+    margin-right: 35px;
+}
+.info-form dd .f-r {
+    float: right;
+}
+.info-form .input-label {
+    margin: 0;
+}
+.info-form .input-label02 {
+    margin: 0 0 0 27px;
+    *margin: 0 0 0 30px;
+}
+.info-form dd label input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.info-form .input-label input, .info-form .input-label02 input {
+    margin: 0 0 0 8px;
+}
+.info-form .btns {
+    *margin-top: 20px;
+    text-align: center;
+}

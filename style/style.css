@@ -26,6 +26,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+input:-webkit-autofill {
+    background-color:#fff
+}
 .d-hidden {
     display: none;
 }
@@ -41,6 +44,9 @@ span.hidden {
 }
 .tl {
     text-align: left !important;
+}
+.f-r {
+    float: right;
 }
 /*进度条*/
 .progress {
@@ -195,11 +201,13 @@ span.hidden {
     width: 162px;
     height: 42px;
     line-height: 42px;
+    border: none;
     font-size: 14px;
     font-weight: bold;
     color: #fff;
     background: url(res/green-btn.png) no-repeat;
     text-align: center;
+
 }
 /*面包屑*/
 .bread {
@@ -331,12 +339,24 @@ span.hidden {
     text-align: center;
     vertical-align: middle;
 }
-.meg {
+.meg, .blue-meg {
     padding: 5px 10px;
     line-height: 20px;
     border: 1px solid #d3d3d3;
     background: #f8f8f8;
     color: #888;
+}
+.blue-meg {
+    padding: 15px 20px;
+    border: 1px solid #c6dce4;
+    background: #edfaff;
+}
+.blue-meg dt {
+    float: left;
+    width: 75px;
+}
+.blue-meg dd {
+    margin-left: 75px;
 }
 /*弹窗样式*/
 #bg {

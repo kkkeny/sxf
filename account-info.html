@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>随行付-账户信息</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/user.css">
+    </head>
+    <body>
+        <div class="login">
+            <div class="warp">
+                <a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>客服热线：4000-887-626</span>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="warp">
+                <h1>随行付</h1>
+                <div class="link">
+                    <div class="menu">
+                        <p>
+                            <a href="#" class="channel">我的账户<span class="hidden">&or;</span></a>
+                        </p>
+                        <div class="hidden">
+                            <a href="#">账户信息</a><a href="#">我的理财</a><a href="#" class="last">我的带宽</a>
+                        </div>
+                    </div>
+                    <a href="#" class="channel">常见问题</a>
+                    <div class="menu">
+                        <p>
+                            <a href="loan.html" class="channel">我要借款<span class="hidden">&or;</span></a>
+                        </p>
+                        <div class="hidden">
+                            <a href="#" class="current">随信贷6个月</a><a href="#" class="last">随信贷12个月</a>
+                        </div>
+                    </div>
+                    <a href="#" class="channel">我要理财</a>
+                    <a href="home.html" class="channel current">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div class="bread">
+            <div class="warp">
+                <a href="home.html">首页</a> &gt; <a href="loan.html">我要借款</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="warp">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">我的帐户</a></li>
+                        <li><a href="#">我的理财</a></li>
+                        <li><a href="#">我的带宽</a></li>
+                        <li><a href="#" class="current">帐户信息</a></li>
+                        <li><a href="#">借出工具</a></li>
+                    </ul>
+                </div>
+                <div class="right account">
+                    <div class="blue-meg">
+                        <dl>
+                            <dt>温馨提示：</dt>
+                            <dd>随信贷有严格的信息和安全加密，确保您的信息安全、不会向外界泄露。请您认真填写，我们会进行审核认证。如有造假，您的理财和贷款资格将被取消。</dd>
+                        </dl>
+                    </div>
+                    <div class="info-form">
+                        <h2>请认真填写，我的基本信息填写后无法修改</h2>
+                        <form action="" method="" id="infoForm">
+                            <h3>我的基本信息</h3>
+                            <dl>
+                                <dt>真实姓名：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="username" datatype="/^[\u4e00-\u9fa5]{2,4}$/" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>
+                                    性别：
+                                </dt>
+                                <dd>
+                                    <label><input type="radio" name="sex" value="0" checked="checked"/>男</label>
+                                    <label><input type="radio" name="sex" value="1"/>女</label>
+                                </dd>
+                                <dt>手机号码：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="telphone" datatype="m" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>验证码：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="code" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>教育程度：</dt>
+                                <dd>
+                                    <select>
+                                        <option>请选择</option>
+                                        <option>本科</option>
+                                        <option>大专</option>
+                                        <option>大专</option>
+                                    </select>
+                                </dd>
+                                <dt>身份证号：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="id_number" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>户籍地址：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="address" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                            </dl>
+                            <div class="clearfix"></div>
+                            <h3>我的家庭基本信息</h3>
+                            <dl>
+                                <dt>婚姻状况：</dt>
+                                <dd>
+                                    <select class="select-02">
+                                        <option>请选择</option>
+                                        <option>未婚</option>
+                                        <option>已婚</option>
+                                        <option>离异</option>
+                                    </select>
+                                </dd>
+                                <dt>
+                                    住宅状况：
+                                </dt>
+                                <dd>
+                                    <select class="select-02">
+                                        <option>请选择</option>
+                                        <option>未婚</option>
+                                        <option>已婚</option>
+                                        <option>离异</option>
+                                    </select>
+                                </dd>
+                                <dt>住宅地址：</dt>
+                                <dd>
+                                    <input type="text" id ="res" value="" class="hidden"/>
+                                    <select class="select-03" id="s_province" runat="server" name="s_province"></select>
+                                    &nbsp;<select class="select-03" id="s_city" runat="server" name="s_city"></select>
+                                    &nbsp;<select class="select-03" id="s_county" onchange = "javascrpt:showArea();"></select>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt></dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="username" datatype="*" errormsg="输入有误" nullmsg="不能为空" value="（请填写详细街道和小区地址）"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>住宅电话：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="phone" datatype="*" errormsg="输入有误" nullmsg="不能为空" value="（例010-69470000、13800138000）"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>入住年数：</dt>
+                                <dd>
+                                    <select class="select-02">
+                                        <option>请选择</option>
+                                        <option>未婚</option>
+                                        <option>已婚</option>
+                                        <option>离异</option>
+                                    </select>
+                                </dd>
+                                <dt>
+                                    是否购车：
+                                </dt>
+                                <dd>
+                                    <label><input type="radio" name="hasCar" value="0" checked="checked"/>是</label>
+                                    <label><input type="radio" name="hasCar" value="1"/>否</label>
+                                </dd>
+                            </dl>
+                            <div class="clearfix"></div>
+                            <h3>我的店铺信息</h3>
+                            <dl>
+                                <dt>注册名称：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="shop_name" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>注册号码：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="shop_id" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>注册地址:</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="shop_address" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>经营地址：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="shop_address2" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                                <dt>
+                                    经营场所：
+                                </dt>
+                                <dd>
+                                    <select>
+                                        <option>请选择</option>
+                                        <option>经营场所</option>
+                                        <option>经营场所</option>
+                                        <option>经营场所</option>
+                                    </select>
+                                </dd>
+                                <dt>经营面积：</dt>
+                                <dd>
+                                    <label class="input-label">总店
+                                        <input type="text" class="input-txt input-02" name="area"/>
+                                        <span>平</span>
+                                    </label>
+                                    <label class="input-label02 f-r">分店
+                                        <input type="text" class="input-txt input-02" name="area2"/>
+                                        <span>平</span>
+                                    </label>
+                                </dd>
+                                <dt>组织形式：</dt>
+                                <dd>
+                                    <label class="input-label">
+                                        <select class="select-02">
+                                            <option>请选择</option>
+                                            <option>经营场所</option>
+                                            <option>经营场所</option>
+                                            <option>经营场所</option>
+                                        </select>
+                                    </label>
+                                    <label class="input-label f-r">占股比例
+                                        <input type="text" class="input-txt input-02" name="username"/>
+                                        <span>%</span>
+                                    </label>
+                                </dd>
+                                <dt>单位电话：</dt>
+                                <dd>
+                                    <input type="text" class="input-txt" name="username" datatype="*" errormsg="输入有误" nullmsg="不能为空"/>
+                                    <span class="Validform_checktip error"></span>
+                                </dd>
+                            </dl>
+                            <div class="btns">
+                                <button class="green-btn">
+                                    保存
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="warp">
+                <div class="footer-l">
+                    <dl>
+                        <dt>合作伙伴：</dt>
+                        <dd>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                            <a href="#">盈科律师事务所</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>友情链接：</dt>
+                        <dd>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                            <a href="#">随行付支付</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="footer-r">
+                    <p>电话：010－88888888（7*24）</p>
+                    <p><a href="#" class="wenxin"></a><a href="#" class="logo"></a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/area.js"></script>
+        <script type="text/javascript" src="js/validform-min.js"></script>
+        <script>
+            $("#infoForm").Validform({
+                tiptype : 3
+            });
+        </script>
+    </body>
+</html>

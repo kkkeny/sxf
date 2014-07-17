@@ -50,15 +50,13 @@
                         }
                     }
                 else {
-                    with ($('.icon-show')) {
-                        removeClass('opened');
-                        with ($('.icon-show').parents('tr').next('tr').children('td')) {
-                            removeClass('table-open');
-                            addClass('hidden');
-                        }
+                    $('.icon-show').removeClass('opened');
+                    with ($('.icon-show').parents('tr').next('tr').children('td')) {
+                        removeClass('table-open');
+                        addClass('hidden');
                     }
                     with (icon) {
-                        addClass('opened');                        
+                        addClass('opened');
                         with (parents('tr').next('tr').children('td')) {
                             removeClass('hidden');
                             addClass('table-open');
@@ -79,7 +77,7 @@
                         siblings('div').addClass('hidden');
                     }
                     with (icon) {
-                        addClass('opened');                        
+                        addClass('opened');
                         siblings('div').removeClass('hidden');
                     }
                 }

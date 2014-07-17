@@ -51,62 +51,75 @@
                     <h2>理财计算器</h2>
                 </div>
                 <div class="cal-form">
-                    <form action="" method="" id="loanForm" name="loanForm">
-                        <dl>
-                            <dt>
-                                借款金额
-                            </dt>
-                            <dd>
-                                <input type="text" class="input-txt"/>
-                                <span class="txt-font">元</span>
-                            </dd>
-                            <dt>
-                                利息年化
-                            </dt>
-                            <dd>
-                                <input type="text" class="input-txt"/>
-                                <span class="txt-font">%</span>
-                            </dd>
-                            <dt>
-                                服务费
-                            </dt>
-                            <dd>
-                                <input type="text" class="input-txt"/>
-                                <span class="txt-font">2%/月</span>
-                            </dd>
-                            <dt>
-                                借款期限
-                            </dt>
-                            <dd>
-                                <select>
-                                    <option>1个月</option>
-                                    <option>2个月</option>
-                                    <option>3个月</option>
-                                    <option>4个月</option>
-                                </select>
-                            </dd>
-                            <dt>
-                                还款方式
-                            </dt>
-                            <dd>
-                                <select>
-                                    <option>等额本金</option>
-                                    <option>等额本息</option>
-                                </select>
-                            </dd>
-                        </dl>
-                        <div class="btns">
-                            <button class="green-btn">
-                                开始计算
-                            </button>
-                        </div>
-                    </form>
+                    <dl>
+                        <dt>
+                            借款金额
+                        </dt>
+                        <dd>
+                            <input type="text" class="input-txt" value="10000" id="c-money"/>
+                            <span class="txt-font">元</span>
+                        </dd>
+                        <dt>
+                            利息年化
+                        </dt>
+                        <dd>
+                            <input type="text" class="input-txt" value="8" id="c-p"/>
+                            <span class="txt-font">%</span>
+                        </dd>
+                        <dt>
+                            服务费
+                        </dt>
+                        <dd>
+                            <input type="text" class="input-txt" value="2" id="c-pay"/>
+                            <span class="txt-font">%/月</span>
+                        </dd>
+                        <dt>
+                            借款期限
+                        </dt>
+                        <dd>
+                            <select id="c-date">
+                                <option>1个月</option>
+                                <option>2个月</option>
+                                <option>3个月</option>
+                                <option>4个月</option>
+                                <option>5个月</option>
+                                <option>6个月</option>
+                                <option>7个月</option>
+                                <option>8个月</option>
+                                <option>9个月</option>
+                                <option>10个月</option>
+                                <option>11个月</option>
+                                <option>12个月</option>
+                            </select>
+                        </dd>
+                        <dt>
+                            还款方式
+                        </dt>
+                        <dd>
+                            <select>
+                                <option>等额本金</option>
+                                <option>等额本息</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <div class="btns">
+                        <button class="green-btn">
+                            开始计算
+                        </button>
+                    </div>
+
                 </div>
                 <div class="cal-result">
                     <h3>计算结果<span>（注：年化利率8%）</span></h3>
-                    <p>总费用：<strong>230，000</strong>元</p>
-                    <p>服务费：<strong>2，0000</strong>元</p>
-                    <p>利息：  <strong>1，0000</strong>元</p>
+                    <p>
+                        总费用：<strong id="total">计算中...</strong>元
+                    </p>
+                    <p>
+                        服务费：<strong id="fwf">计算中...</strong>元
+                    </p>
+                    <p>
+                        利息： <strong id="lx">计算中...</strong>元
+                    </p>
                     <h3>还款计划书<span>（注：实际收款中可能因为月偿还利息为非整数而产生几分钱的误差）</span></h3>
                     <table>
                         <thead>
@@ -118,27 +131,27 @@
                                 <th width="17%">利息</th>
                             </tr>
                         </thead>
+                        <tr style="background: #f8f8f8" class="c-tr">
+                            <td>月份</td>
+                            <td>计算中...</td>
+                            <td>计算中...</td>
+                            <td>计算中...</td>
+                            <td>计算中...</td>
+                        </tr>
+                        <!-- <tr>
+                        <td>第2个月</td>
+                        <td>24,340</td>
+                        <td>200,00</td>
+                        <td>4200</td>
+                        <td>140</td>
+                        </tr>
                         <tr style="background: #f8f8f8">
-                            <td>第1个月</td>
-                            <td>24,340</td>
-                            <td>200,00</td>
-                            <td>4200</td>
-                            <td>140</td>
-                        </tr>
-                        <tr>
-                            <td>第2个月</td>
-                            <td>24,340</td>
-                            <td>200,00</td>
-                            <td>4200</td>
-                            <td>140</td>
-                        </tr>
-                        <tr style="background: #f8f8f8">
-                            <td>第3个月</td>
-                            <td>24,340</td>
-                            <td>200,00</td>
-                            <td>4200</td>
-                            <td>140</td>
-                        </tr>
+                        <td>第3个月</td>
+                        <td>24,340</td>
+                        <td>200,00</td>
+                        <td>4200</td>
+                        <td>140</td>
+                        </tr> -->
                     </table>
                 </div>
             </div>
@@ -147,7 +160,9 @@
             <div class="warp">
                 <div class="footer-l">
                     <dl>
-                        <dt>合作伙伴：</dt>
+                        <dt>
+                            合作伙伴：
+                        </dt>
                         <dd>
                             <a href="#">盈科律师事务所</a>
                             <a href="#">盈科律师事务所</a>
@@ -164,7 +179,9 @@
                         </dd>
                     </dl>
                     <dl>
-                        <dt>友情链接：</dt>
+                        <dt>
+                            友情链接：
+                        </dt>
                         <dd>
                             <a href="#">随行付支付</a>
                             <a href="#">随行付支付</a>
@@ -186,13 +203,18 @@
                     </dl>
                 </div>
                 <div class="footer-r">
-                    <p>电话：010－88888888（7*24）</p>
-                    <p><a href="#" class="wenxin"></a><a href="#" class="logo"></a></p>
+                    <p>
+                        电话：010－88888888（7*24）
+                    </p>
+                    <p>
+                        <a href="#" class="wenxin"></a><a href="#" class="logo"></a>
+                    </p>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/cal.js"></script>
     </body>
 </html>

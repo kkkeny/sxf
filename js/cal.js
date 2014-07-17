@@ -18,7 +18,7 @@
         p = isNaN(p) ? 0 : p;
         pay = isNaN(pay) ? 0 : pay;
         // console.log(m + '<>' + n + '<>' + p + '<>' + pay);
-        var benjin = n / m, fwf = Math.round((benjin * pay / 100) * 100) / 100;
+        var benjin = n / m, fwf = Math.round((n * pay / 100) * 100) / 100;
         var total = {
             total : function() {
                 return this.fwf + this.lx;

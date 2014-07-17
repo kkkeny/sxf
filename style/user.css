@@ -237,7 +237,8 @@ table {
     color: #888;
 }
 .right .show-info.pay-off {
-    width: 696px;
+    /*width: 696px;*/
+    width: 100%;
     padding: 0;
 }
 .right .pay-off th, .right .pay-off td {
@@ -245,9 +246,9 @@ table {
     border-top: none;
 }
 /*.green-btn{
-    *display: inline;
-    *zoom:1;
-}*/
+ *display: inline;
+ *zoom:1;
+ }*/
 /*常见问题*/
 .problem {
     padding: 50px 0;

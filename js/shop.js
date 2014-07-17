@@ -51,11 +51,25 @@
     });
     //计算
     $('#c-date').bind('change', function() {
-        var m = parseInt($(this).valueOf().val()), n = parseInt($('#c-money').val()), p = parseInt($('#c-p').text());
+        var m = parseInt($(this).valueOf().val()), n = parseInt($('#c-money').val()), p = parseInt($('#c-p').text()), res = parseInt($(this).children(':selected').attr('max'));
         m = isNaN(m) ? 0 : m;
         n = isNaN(n) ? 0 : n;
         p = isNaN(p) ? 0 : p;
-        console.log(m + '<>' + n + '<>' + p);
+        res = isNaN(res) ? 0 : res;
+        //console.log(m + '<>' + n + '<>' + p + '<>' + max);
+        //处理分位
+        if (res > 1000) {
+            var a = (res + '').split('.');
+            res = a[0].split('');
+            res = res.reverse().join('');
+            console.log(res);
+            res = res.replace(/(\d\d\d)/g, '$1' + ',').split('').reverse().join('');
+            if (res[0] == ',')
+                res = res.substr(1);
+            if (a[1])
+                res += '.' + a[1];
+        }
+        $('#c-left').text(res + '元');
         $('#c-res').text(m * n * p / 100);
 
     });

@@ -48,33 +48,19 @@
         <div class="content">
             <div class="box online-loan">
                 <div class="menu">
-                    <h2>借款计算器</h2>
+                    <h2>理财计算器</h2>
                 </div>
                 <div class="cal-form">
                     <dl>
                         <dt>
-                            借款金额
+                            投资金额
                         </dt>
                         <dd>
                             <input type="text" class="input-txt" value="10000" id="c-money"/>
                             <span class="txt-font">元</span>
                         </dd>
                         <dt>
-                            利息年化
-                        </dt>
-                        <dd>
-                            <input type="text" class="input-txt" value="8" id="c-p"/>
-                            <span class="txt-font">%</span>
-                        </dd>
-                        <dt>
-                            服务费
-                        </dt>
-                        <dd>
-                            <input type="text" class="input-txt" value="2" id="c-pay"/>
-                            <span class="txt-font">%/月</span>
-                        </dd>
-                        <dt>
-                            借款期限
+                            投资期限
                         </dt>
                         <dd>
                             <select id="c-date">
@@ -93,65 +79,37 @@
                             </select>
                         </dd>
                         <dt>
-                            还款方式
+
                         </dt>
                         <dd>
-                            <select>
-                                <option>等额本金</option>
-                                <option>等额本息</option>
-                            </select>
+                            <button class="green-btn">
+                                开始计算
+                            </button>
                         </dd>
                     </dl>
-                    <div class="btns">
-                        <button class="green-btn">
-                            开始计算
-                        </button>
-                    </div>
 
                 </div>
                 <div class="cal-result">
                     <h3>计算结果<span>（注：年化利率8%）</span></h3>
                     <p>
-                        总费用：<strong id="total">计算中...</strong>元
-                    </p>
-                    <p>
-                        服务费：<strong id="fwf">计算中...</strong>元
-                    </p>
-                    <p>
-                        利息： <strong id="lx">计算中...</strong>元
+                        应收利息： <strong id="lx">计算中...</strong>元
                     </p>
                     <h3>还款计划书<span>（注：实际收款中可能因为月偿还利息为非整数而产生几分钱的误差）</span></h3>
                     <table>
                         <thead>
                             <tr>
                                 <th width="17%">序号</th>
-                                <th width="22%">还款总额</th>
-                                <th width="22%">本金</th>
-                                <th width="22%">服务费</th>
-                                <th width="17%">利息</th>
+                                <th width="22%">投资项目</th>
+                                <th width="22%">投资金额</th>
+                                <th width="17%">应收利息</th>
                             </tr>
                         </thead>
                         <tr style="background: #f8f8f8" class="c-tr">
                             <td>月份</td>
-                            <td>计算中...</td>
-                            <td>计算中...</td>
+                            <td>随行付</td>
                             <td>计算中...</td>
                             <td>计算中...</td>
                         </tr>
-                        <!-- <tr>
-                        <td>第2个月</td>
-                        <td>24,340</td>
-                        <td>200,00</td>
-                        <td>4200</td>
-                        <td>140</td>
-                        </tr>
-                        <tr style="background: #f8f8f8">
-                        <td>第3个月</td>
-                        <td>24,340</td>
-                        <td>200,00</td>
-                        <td>4200</td>
-                        <td>140</td>
-                        </tr> -->
                     </table>
                 </div>
             </div>
@@ -215,6 +173,6 @@
         </div>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/cal.js"></script>
+        <script type="text/javascript" src="js/cal-2.js"></script>
     </body>
 </html>

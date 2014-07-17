@@ -4,29 +4,25 @@
     $('.green-btn').bind('click', function() {
         var m = parseInt($('#c-date').valueOf().val());
         var n = parseInt($('#c-money').val());
-        var p = parseInt($('#c-p').val());
-        var pay = parseInt($('#c-pay').val());
+        var p = 8 / 100;
         var tr = $($('.c-tr')[0]);
         tr.parent().children(':not(:first)').remove();
         m = isNaN(m) ? 0 : m;
         n = isNaN(n) ? 0 : n;
-        p = isNaN(p) ? 0 : p;
-        pay = isNaN(pay) ? 0 : pay;
-        // console.log(m + '<>' + n + '<>' + p + '<>' + pay);
-        var benjin = n / m, fwf = Math.round((n * pay / 100) * 100) / 100;
-        var total = {
-            total : function() {
-                return this.fwf + this.lx;
-            },
-            fwf : 0,
-            lx : 0
-        };
+        console.log(m + '<>' + n + '<>' + p);
+        //var benjin = n / m, fwf = Math.round((n * pay / 100) * 100) / 100;
+
         for (var i = 1; i < m; i++) {
             tr.parent().append(tr.clone());
         }
+        var total = {
+            lx : 0
+        };
         tr.parent().children().each(function(i) {
-            var tr = $(this), lx = (n * (m - i) / m * p / 100 / 12);
+            var tr = $(this), lx = n * (i + 1) * p;
+            console.log(lx);
             lx = Math.round((lx) * 100) / 100;
+            console.log(lx);
             tr.children().each(function(index) {
                 var td = $(this);
                 switch(index) {
@@ -34,29 +30,22 @@
                         td.text('第' + (i + 1) + '个月');
                         break;
                     case 1:
-                        td.text(Math.round((benjin + fwf + lx) * 100) / 100);
+                        td.text('随行付');
                         break;
                     case 2:
-                        td.text(Math.round((benjin) * 100) / 100);
+                        td.text(n + '元');
                         break;
                     case 3:
-                        td.text(fwf);
-                        break;
-                    case 4:
                         td.text(lx);
                         break;
                 }
             });
             total.lx += lx;
-            total.fwf += fwf;
 
         });
         var res;
         for (var p in total) {
-            if (p == 'total')
-                res = Math.round((total[p]()) * 100) / 100;
-            else
-                res = Math.round((total[p]) * 100) / 100;
+            res = Math.round((total[p]) * 100) / 100;
             //处理分位
             if (res > 1000) {
                 var a = (res + '').split('.');

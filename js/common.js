@@ -51,7 +51,7 @@
                     }
                 else {
                     with ($('.icon-show')) {
-                        $('.icon-show').removeClass('opened');
+                        removeClass('opened');
                         with ($('.icon-show').parents('tr').next('tr').children('td')) {
                             removeClass('table-open');
                             addClass('hidden');
@@ -63,6 +63,24 @@
                             removeClass('hidden');
                             addClass('table-open');
                         }
+                    }
+                }
+            });
+            $('.info em').click(function() {
+                var icon = $(this).parent();
+                if (icon.hasClass('opened'))
+                    with (icon) {
+                        removeClass('opened');
+                        siblings('div').addClass('hidden');
+                    }
+                else {
+                    with ($('.info em').parent()) {
+                        removeClass('opened');
+                        siblings('div').addClass('hidden');
+                    }
+                    with (icon) {
+                        addClass('opened');                        
+                        siblings('div').removeClass('hidden');
                     }
                 }
             });

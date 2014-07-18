@@ -387,6 +387,7 @@ table {
     line-height: 42px;
 }
 .info-form dd {
+    position: relative;
     float: left;
     width: 345px;
     height: 42px;

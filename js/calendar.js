@@ -81,6 +81,18 @@ m_aMonHead[8] = 30;
 m_aMonHead[9] = 31;
 m_aMonHead[10] = 30;
 m_aMonHead[11] = 31;
+//处理历史问题
+$(function() {
+    if (!document.all) {
+        console.log('处理历史问题');
+        var all = [];
+        $('[id]').each(function() {
+            all[this.id] = this;
+        });
+        document.all = all;
+    }
+});
+
 // ---------------------- 用户可调用的函数 -----------------------------//
 //用户主调函数－只选择日期
 function setDay(obj) {
@@ -449,8 +461,9 @@ function tiannetSetDay(yy, mm) {
         if (tiannetArrDay[i] != "") {
             //判断是否为周末，如果是周末，则改为红色字体
             if (i % 7 == 0 || (i + 1) % 7 == 0) {
-                strDateFont1 = "<font color=#f0000>"
-                strDateFont2 = "</font>"
+                //strDateFont1 = "<font color=#f0000>"
+                //strDateFont2 = "</font>"
+                da.className = 'red';
             } else {
                 strDateFont1 = "";
                 strDateFont2 = ""

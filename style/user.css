@@ -467,3 +467,10 @@ table {
     *margin-top: 20px;
     text-align: center;
 }
+/*修正日历bug*/
+.red {
+    color: #f00000 !important;
+}
+#divTiannetDate td{
+    cursor: pointer;
+}
